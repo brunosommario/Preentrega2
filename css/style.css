@@ -1,0 +1,213 @@
+body {
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Playfair';
+    background-color:#1A1A1A;
+    color: antiquewhite;
+}
+
+
+
+/*  index Mobile */
+@media only screen and (min-width: 0px) and (max-width: 567px) {
+    .container_flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 260px;
+        margin: auto;
+        text-align: center;
+
+    }
+    
+
+    .container_flex img {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+}
+
+/* index Desktop */
+
+.carousel_index {
+width: max-content;
+height: auto;
+}
+
+p span {
+    color: rgb(138, 190, 40);
+}
+
+.tatuajes_valencia {
+    margin-top: 3rem;
+
+}
+
+.container_flex {
+    display: flex;
+    margin: 1rem;
+    width: 100%;
+    height: auto;
+
+}
+
+.container_flex p {
+    margin-left: 1rem;
+}
+
+.ver_mas {
+    text-align: center;
+
+}
+
+.artistas {
+    margin-top: 3rem;
+}
+
+/* Tatuajes Desktop */
+
+.ol-tatuajes span {
+    color: rgb(138, 190, 40);
+}
+
+.galeria_estilos {
+    margin: 1rem;
+}
+
+.gallery img {
+    width: 12rem;
+    height: 12rem;
+    padding: 3px;
+    border-radius: 7px;
+    border: 1px solid black;
+
+}
+
+/* Css artistas.html */
+
+.perfil_artista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.descripcion_artista {
+    flex: 1;
+    padding: 20px;
+}
+
+.img_artista {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+}
+
+.carousel {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .perfil_artista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descripcion_artista,
+    .carousel {
+        max-width: 100%;
+    }
+}
+
+/* Css contacto.html */
+
+.form_contacto {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5a209;
+    color: #fff;
+    cursor: pointer;
+}
+
+.horarios {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f5a209;
+}
+
+.google_maps {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+
+}
+
+.google_maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    text-align: center;
+
+}
