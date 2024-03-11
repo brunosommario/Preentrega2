@@ -31,8 +31,8 @@ body {
 
 /* index Desktop */
 
-.carousel_index {
-width: max-content;
+.carousel-inner {
+width: 300px;
 height: auto;
 }
 
