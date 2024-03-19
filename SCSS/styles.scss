@@ -10,7 +10,7 @@
 // Variables
 $color-background: #1A1A1A;
 $color-text: antiquewhite;
-$color-highlight: rgb(138, 190, 40);
+$color-dos: rgb(138, 190, 40);
 
 // Estilos generales
 body {
@@ -48,7 +48,7 @@ body {
 
 // Estilos para los span dentro de los párrafos
 p span {
-    color: $color-highlight;
+    color: $color-dos;
 }
 
 // Estilos para elementos con la clase 'tatuajes_valencia'
@@ -80,7 +80,7 @@ p span {
 
 // Estilos para los elementos de la galería de tatuajes
 .ol-tatuajes span {
-    color: $color-highlight;
+    color: $color-dos;
 }
 
 .galeria_estilos {
