@@ -74,6 +74,13 @@ p span {
   border-radius: 7px;
   border: 1px solid black;
 }
+.Imagen {
+  transition: transform 0.3s ease;
+}
+
+.Imagen:hover {
+  transform: scale(1.4);
+}
 
 .form_contacto {
   max-width: 500px;
@@ -147,3 +154,4 @@ p span {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
