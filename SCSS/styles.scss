@@ -1,12 +1,6 @@
-/*  Sintaxi de SASS -- nesting 
- elemaneto padre{
-    elemento hijo{
-        propiedad: valor;
- } 
-}*/
+@use "../SCSS/main-index";
+@use"../SCSS/media-mobile";
 
-
-// Variables
 $color-background: #1A1A1A;
 $color-text: antiquewhite;
 $color-dos: rgb(138, 190, 40);
