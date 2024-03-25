@@ -1,36 +1,53 @@
-/* Estilos para el contenedor del perfil de artista */
-.contenedor-perfil {
-    display: flex;   
-    align-items: center;
-    padding: 10px;
-    justify-content: stretch;
+// Variables
+$white: #fff;
+$profile-container-padding: 10px;
+$profile-image-width: 400px;
+$profile-image-margin-bottom: 20px;
+$profile-image-margin-right: 7rem;
+$profile-details-width: 50%;
+$profile-heading-font-size: 40px;
+$profile-paragraph-font-size: 16px;
 
-    /* Estilos para la imagen del artista */
-    .imagen-perfil {
-        width: 400px;
-        margin-bottom: 20px;
-        margin-right: 7rem; 
-        
+// Mixins
+@mixin center-text {
+    text-align: center;
+}
 
-        img {
-            width: 100%;
-            height: auto;
-        }
-    }
-    /* Estilos para los detalles del artista */
-    .descripcion-perfil {
-        text-align: justify;
-        width: 50%;
 
-        h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-        
+main {
+    p {
+        color: $white;
+        @include center-text;
     }
 
+    .contenedor-perfil {
+        display: flex;
+        align-items: center;
+        padding: $profile-container-padding;
+        justify-content: stretch;
+
+        .imagen-perfil {
+            width: $profile-image-width;
+            margin-bottom: $profile-image-margin-bottom;
+            margin-right: $profile-image-margin-right;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .descripcion-perfil {
+            width: $profile-details-width;
+
+            h1 {
+                font-size: $profile-heading-font-size;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: $profile-paragraph-font-size;
+            }
+        }
+    }
 }

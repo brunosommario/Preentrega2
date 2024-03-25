@@ -1,12 +1,7 @@
-header .navbar-toggler {
-  color:#fff;
-}
-header .navbar-toggler-icon {
+.navbar-toggler, header .navbar-toggler, header .navbar-toggler-icon, header .nav-link, .navbar-toggler-icon, .nav-link {
   color: #fff;
 }
-header .nav-link {
-  color: #fff;
-}
+
 main {
   background-color: black;
 }
@@ -16,7 +11,7 @@ main h1 {
   text-align: center;
   font-family: Arial;
   font-size: 4rem;
-  text-shadow: 0px 0px 9px #e0d536;
+  text-shadow: 0px 0px 5px #e0d536;
 }
 main h2 {
   color: rgb(184, 3, 123);
@@ -34,17 +29,17 @@ main h3 {
   font-size: 2rem;
   text-shadow: 0px 0px 5px #9bf593;
 }
-main .section-1 P {
+main .section-1 p {
   text-align: center;
   color: #fff;
   padding: 3rem;
 }
-main .section-1 P span {
+main .section-1 p span {
   color: rgb(138, 190, 40);
 }
 main .section-2 {
   text-align: center;
-  color: antiquewhite;
+  color: #fff;
 }
 main .section-2 .container_flex {
   display: flex;
@@ -53,36 +48,126 @@ main .section-2 .container_flex {
   height: auto;
 }
 main .section-2 .container_flex p {
-  margin: 0px 20px 0px 20px;
-  color: antiquewhite;
+  margin: 0 20px;
+  color: #fff;
 }
 main .section-2 .container_flex img {
   width: 300px;
   align-items: center;
 }
-main .section-2 .container_flex .ver_mas {
-  text-align: center;
-  font-size: 1rem;
-  color: #9bf593;
-  border: 1px;
-}
 main .section-3 {
   margin-top: 6px;
 }
-main p {
-  text-align: center;
-  color: antiquewhite;
-}
-main .card-body p {
-  color: black;
-}
-main .ver_mas {
-  text-align: center;
-  font-size: 1rem;
-  color: #9bf593;
-  border: 1px;
+/* header {
+    .navbar-toggler {
+        color: antiquewhite;
+    }
+
+    .navbar-toggler-icon {
+        color: antiquewhite;
+
+    }
+
+    .nav-link {
+        color: antiquewhite;
+    }
 }
 
+
+main {
+    background-color: black;
+
+    h1 {
+        color: rgb(255, 140, 0);
+        letter-spacing: 3px;
+        text-align: center;
+        font-family: Arial;
+        font-size: 4rem;
+        text-shadow: 0px 0px 9px #e0d536;
+
+    }
+
+    h2 {
+        color: rgb(184, 3, 123);
+        letter-spacing: 3px;
+        text-align: center;
+        font-family: Arial;
+        font-size: 3rem;
+        text-shadow: 0px 0px 5px #fa52c7;
+    }
+
+    h3 {
+        color: rgb(178, 252, 6);
+        letter-spacing: 3px;
+        text-align: center;
+        font-family: Arial;
+        font-size: 2rem;
+        text-shadow: 0px 0px 5px #9bf593;
+
+    }
+
+    .section-1 {
+        P {
+            text-align: center;
+            color: antiquewhite;
+            padding: 3rem;
+
+            span {
+                color: rgb(138, 190, 40);
+            }
+        }
+    }
+
+    .section-2 {
+
+        text-align: center;
+        color: antiquewhite;
+
+
+        .container_flex {
+            display: flex;
+            margin: 1rem;
+            width: 90%;
+            height: auto;
+
+            p {
+                margin: 0px 20px 0px 20px;
+                color: antiquewhite;
+            }
+
+            img {
+                width: 300px;
+                align-items: center;
+
+            }
+
+            .ver_mas {
+                text-align: center;
+                font-size: 1rem;
+                color: #9bf593;
+                border: 1px;
+            }
+        }
+
+
+    }
+
+    .section-3 {
+        margin-top: 6px;
+
+    }
+
+
+
+
+    .ver_mas {
+        text-align: center;
+        font-size: 1rem;
+        color: #9bf593;
+        border: 1px;
+    }
+
+} */
 @media only screen and (min-width: 0px) and (max-width: 567px) {
   h1 {
     font-size: 2rem;
@@ -102,6 +187,12 @@ main .ver_mas {
     width: 200px;
     height: auto;
     align-content: center;
+  }
+  .container_flex .preguntas {
+    padding: 1rem;
+  }
+  .container_flex .preguntas h2 {
+    font-size: 4rem;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 567px) and (max-width: 768px) {
@@ -133,13 +224,17 @@ main .ver_mas {
   background-color: black;
 }
 
-body {
-  margin: 0px;
-  padding: 0px;
+body,
+main {
+  margin: 0;
+  padding: 0;
 }
 
 main .section-tatuajes p {
-  color: antiquewhite;
+  color: #fff;
+}
+main .section-tatuajes p ol li {
+  color: #fff;
 }
 main .section-tatuajes span {
   color: rgb(138, 190, 40);
@@ -160,45 +255,55 @@ main .galeria_estilos .gallery img:hover {
   transform: scale(1.4);
 }
 
-/* Estilos para el contenedor del perfil de artista */
-.contenedor-perfil {
+main p {
+  color: #fff;
+  text-align: center;
+}
+main .contenedor-perfil {
   display: flex;
   align-items: center;
   padding: 10px;
   justify-content: stretch;
-  /* Estilos para la imagen del artista */
-  /* Estilos para los detalles del artista */
 }
-.contenedor-perfil .imagen-perfil {
+main .contenedor-perfil .imagen-perfil {
   width: 400px;
   margin-bottom: 20px;
   margin-right: 7rem;
 }
-.contenedor-perfil .imagen-perfil img {
+main .contenedor-perfil .imagen-perfil img {
   width: 100%;
   height: auto;
 }
-.contenedor-perfil .descripcion-perfil {
-  text-align: justify;
+main .contenedor-perfil .descripcion-perfil {
   width: 50%;
 }
-.contenedor-perfil .descripcion-perfil h1 {
+main .contenedor-perfil .descripcion-perfil h1 {
   font-size: 40px;
   margin-bottom: 10px;
 }
-.contenedor-perfil .descripcion-perfil p {
+main .contenedor-perfil .descripcion-perfil p {
   font-size: 16px;
 }
 
-main {
-  margin: 0px;
+main .preguntas {
+  padding: 2rem;
+}
+main .preguntas h2 {
+  font-size: 2rem;
+}
+main .preguntas P {
+  text-align: left;
+}
+main .preguntas ol {
+  color: #fff;
 }
 
-.form_contacto {
-  max-width: 500px;
+.form_contacto, .horarios {
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
+
 .form_contacto .form-group {
   margin-bottom: 20px;
 }
@@ -227,9 +332,6 @@ main {
 }
 
 .horarios {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
   text-align: center;
 }
 .horarios table {
@@ -237,8 +339,7 @@ main {
   border-collapse: collapse;
   margin-bottom: 20px;
 }
-.horarios table th,
-.horarios table td {
+.horarios table th, .horarios table td {
   border: 1px solid #dddddd;
   padding: 10px;
   text-align: center;

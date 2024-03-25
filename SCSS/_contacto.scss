@@ -1,10 +1,26 @@
-// Estilos para la página de contacto
-.form_contacto {
-    max-width: 500px;
+// Variables
+$orange: #f5a209;
+$light-gray: #ccc;
+$dark-gray: #dddddd;
+$white: #fff;
+
+// Mixins
+@mixin form-input-styles {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+// Extend
+.form_contacto, .horarios {
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
+}
 
-    // Estilos para los elementos de formulario
+.form_contacto {
     .form-group {
         margin-bottom: 20px;
     }
@@ -12,18 +28,13 @@
     label {
         display: block;
         font-weight: bold;
-        color: #f5a209;
+        color: $orange;
     }
 
     input[type="text"],
     input[type="email"],
     textarea {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-        
+        @include form-input-styles;
     }
 
     input[type="submit"] {
@@ -37,11 +48,7 @@
     }
 }
 
-// Estilos para la sección de horarios
 .horarios {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
     text-align: center;
 
     table {
@@ -49,21 +56,19 @@
         border-collapse: collapse;
         margin-bottom: 20px;
 
-        th,
-        td {
-            border: 1px solid #dddddd;
+        th, td {
+            border: 1px solid $dark-gray;
             padding: 10px;
             text-align: center;
-            color: #fff;
+            color: $white;
         }
 
         th {
-            background-color: #f5a209;
+            background-color: $orange;
         }
     }
 }
 
-// Estilos para el mapa de Google
 .google_maps {
     position: relative;
     width: 100%;

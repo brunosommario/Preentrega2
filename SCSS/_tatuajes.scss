@@ -1,39 +1,59 @@
-body {
-    margin: 0px;
-    padding: 0px;
+// Variables
+$white: #fff;
+$green: rgb(138, 190, 40);
+$gallery-padding: 3px;
+$gallery-border-radius: 7px;
+$gallery-transition: transform 0.3s ease;
+$gallery-hover-scale: 1.4;
+
+// Mixins
+@mixin gallery-item {
+    margin: 10px;
+    width: 12rem;
+    height: 12rem;
+    padding: $gallery-padding;
+    border-radius: $gallery-border-radius;
+    transition: $gallery-transition;
+
+    &:hover {
+        transform: scale($gallery-hover-scale);
+    }
 }
+
+
+body,
+main {
+    margin: 0;
+    padding: 0;
+}
+
 
 main {
     .section-tatuajes {
-
         p {
-            color: antiquewhite;
+            color: $white;
+
+            ol {
+                li {
+                    color: $white;
+                }
+
+            }
         }
 
         span {
-            color: rgb(138, 190, 40);
+            color: $green;
         }
-
     }
 
-    .galeria_tatuajes{
+    .galeria_tatuajes {
         margin-left: 1rem;
         margin-right: 1rem;
     }
 
     .galeria_estilos {
-
         .gallery img {
-            margin: 10px;
-            width: 12rem;
-            height: 12rem;
-            padding: 3px;
-            border-radius: 7px;
-            transition: transform 0.3s ease;
-
-            &:hover {
-                transform: scale(1.4);
-            }
+            @include gallery-item;
         }
     }
 }
