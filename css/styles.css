@@ -1,34 +1,21 @@
+header .navbar-toggler {
+  color:#fff;
+}
+header .navbar-toggler-icon {
+  color: #fff;
+}
+header .nav-link {
+  color: #fff;
+}
 main {
   background-color: black;
-  /*    .carouselExampleAutoplaying {
-         position: relative;
-         text-align: center;
-         color: white;
-     } */
-}
-main .title {
-  position: absolute;
-  top: 60%;
-  left: 10%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  color: rgb(255, 140, 0);
-  letter-spacing: 3px;
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 5vw;
-  text-shadow: 0px 0px 9px #e0d536;
-}
-main img {
-  width: 100%;
-  height: auto;
 }
 main h1 {
   color: rgb(255, 140, 0);
   letter-spacing: 3px;
   text-align: center;
   font-family: Arial;
-  font-size: 5rem;
+  font-size: 4rem;
   text-shadow: 0px 0px 9px #e0d536;
 }
 main h2 {
@@ -48,16 +35,16 @@ main h3 {
   text-shadow: 0px 0px 5px #9bf593;
 }
 main .section-1 P {
-  color: antiquewhite;
   text-align: center;
+  color: #fff;
+  padding: 3rem;
 }
 main .section-1 P span {
   color: rgb(138, 190, 40);
 }
 main .section-2 {
-  margin: 3rem 0.5rem 3rem 0.5rem;
-  background-color: white;
   text-align: center;
+  color: antiquewhite;
 }
 main .section-2 .container_flex {
   display: flex;
@@ -67,12 +54,29 @@ main .section-2 .container_flex {
 }
 main .section-2 .container_flex p {
   margin: 0px 20px 0px 20px;
+  color: antiquewhite;
 }
 main .section-2 .container_flex img {
   width: 300px;
   align-items: center;
 }
-main .section-2 .ver_mas {
+main .section-2 .container_flex .ver_mas {
+  text-align: center;
+  font-size: 1rem;
+  color: #9bf593;
+  border: 1px;
+}
+main .section-3 {
+  margin-top: 6px;
+}
+main p {
+  text-align: center;
+  color: antiquewhite;
+}
+main .card-body p {
+  color: black;
+}
+main .ver_mas {
   text-align: center;
   font-size: 1rem;
   color: #9bf593;
@@ -92,88 +96,102 @@ main .section-2 .ver_mas {
     flex-wrap: wrap;
     margin: auto;
     text-align: center;
+    flex-direction: column;
   }
-  .container_flex flex-direction:column img {
-    width: auto;
+  .container_flex img {
+    width: 200px;
     height: auto;
     align-content: center;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 567px) and (max-width: 768px) {
+  .contenedor-perfil {
+    padding: 2px;
+    flex-direction: column;
+  }
+  .imagen-perfil {
+    max-width: 100%;
+    margin-bottom: 0;
+    /* margin-right: 20px; */
+  }
+  .imagen-perfil img {
+    max-width: 100%;
+    height: auto;
+  }
+  .descripcion-perfil {
+    max-width: 100%;
+    flex: 2;
+  }
+  .descripcion-perfil p {
+    text-align: justify;
+    max-width: 90%;
+    margin: 0px;
+  }
+}
+.footer {
+  text-align: center;
+  background-color: black;
+}
+
 body {
   margin: 0px;
-  padding: 10px;
-  font-family: "Playfair";
-  background-color: #1A1A1A;
+  padding: 0px;
+}
+
+main .section-tatuajes p {
   color: antiquewhite;
 }
-@media only screen and (min-width: 0px) and (max-width: 567px) {
-  body .container_flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 260px;
-    margin: auto;
-    text-align: center;
-  }
-  body .container_flex img {
-    width: 100%;
-    height: auto;
-    margin: 10px;
-  }
-}
-
-.carousel-inner {
-  width: 300px;
-  height: auto;
-}
-
-p span {
+main .section-tatuajes span {
   color: rgb(138, 190, 40);
 }
-
-.tatuajes_valencia {
-  margin-top: 3rem;
-}
-
-.container_flex {
-  display: flex;
-  margin: 1rem;
-  width: 100%;
-  height: auto;
-}
-.container_flex p {
+main .galeria_tatuajes {
   margin-left: 1rem;
+  margin-right: 1rem;
 }
-
-.ver_mas {
-  text-align: center;
-}
-
-.artistas {
-  margin-top: 3rem;
-}
-
-.ol-tatuajes span {
-  color: rgb(138, 190, 40);
-}
-
-.galeria_estilos {
-  margin: 1rem;
-}
-
-.gallery img {
+main .galeria_estilos .gallery img {
+  margin: 10px;
   width: 12rem;
   height: 12rem;
   padding: 3px;
   border-radius: 7px;
-  border: 1px solid black;
-}
-.gallery img .Imagen {
   transition: transform 0.3s ease;
 }
-.gallery img .Imagen:hover {
+main .galeria_estilos .gallery img:hover {
   transform: scale(1.4);
+}
+
+/* Estilos para el contenedor del perfil de artista */
+.contenedor-perfil {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: stretch;
+  /* Estilos para la imagen del artista */
+  /* Estilos para los detalles del artista */
+}
+.contenedor-perfil .imagen-perfil {
+  width: 400px;
+  margin-bottom: 20px;
+  margin-right: 7rem;
+}
+.contenedor-perfil .imagen-perfil img {
+  width: 100%;
+  height: auto;
+}
+.contenedor-perfil .descripcion-perfil {
+  text-align: justify;
+  width: 50%;
+}
+.contenedor-perfil .descripcion-perfil h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.contenedor-perfil .descripcion-perfil p {
+  font-size: 16px;
+}
+
+main {
+  margin: 0px;
 }
 
 .form_contacto {
@@ -187,6 +205,7 @@ p span {
 .form_contacto label {
   display: block;
   font-weight: bold;
+  color: #f5a209;
 }
 .form_contacto input[type=text],
 .form_contacto input[type=email],
@@ -223,6 +242,7 @@ p span {
   border: 1px solid #dddddd;
   padding: 10px;
   text-align: center;
+  color: #fff;
 }
 .horarios table th {
   background-color: #f5a209;
@@ -241,10 +261,6 @@ p span {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.footer {
-  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

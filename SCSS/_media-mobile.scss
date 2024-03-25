@@ -3,8 +3,8 @@
         font-size: 2rem;
     }
 
-    .container-title{
-        display:none;
+    .container-title {
+        display: none;
     }
 
     .container_flex {
@@ -16,11 +16,55 @@
         margin: auto;
         text-align: center;
 
-        flex-direction:column img {
-            width: auto;
-            height: auto;
+        flex-direction: column;
 
+        img {
+            width: 200px;
+            height: auto;
             align-content: center;
+
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .contenedor-perfil {
+            padding: 2px;
+            flex-direction: column;
+               }
+
+
+        .imagen-perfil {
+            max-width: 100%;
+            margin-bottom: 0;
+            /* margin-right: 20px; */
+
+
+            img {
+                max-width: 100%;
+                height: auto;
+
+            }
+        }
+
+        .descripcion-perfil {
+                    
+            max-width: 100%;
+            flex: 2;
+
+            p{
+                text-align:justify;
+                max-width: 90%;
+                margin: 0px;
+                
+            }
+            
+
+
         }
     }
+
+
+
+
 }

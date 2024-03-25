@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    .section-tatuajes {
+
+        p {
+            color: antiquewhite;
+        }
+
+        span {
+            color: rgb(138, 190, 40);
+        }
+
+    }
+
+    .galeria_tatuajes{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .galeria_estilos {
+
+        .gallery img {
+            margin: 10px;
+            width: 12rem;
+            height: 12rem;
+            padding: 3px;
+            border-radius: 7px;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.4);
+            }
+        }
+    }
+}
